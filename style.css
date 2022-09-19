@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+::selection {
+    background-color: slategrey;
+    color: white;
+}
+
+body {
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    z-index: 200;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,0.5));
+}
+
+.horz-scroll {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.horz-scroll a {
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.horz-scroll a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.tandon {
+    background-image: url(tandon.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 80%;
+    background-size: cover;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 100px;
+}
+
+.name {
+    font-family: 'Staatliches', cursive;
+}
+
+.tandon .title, .tandon .subtitle, .education .title, .education .subtitle {
+    color: white;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 600px) {
+    .tandon {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+        padding-top: 40px;
+      }
+
+    .education {
+        padding-bottom: 3%;
+    }
+
+    .intro {
+        margin-left: 5%;
+    }
+
+    .name {
+        font-size: 5rem;
+        color: white;
+    }
+
+    .horz-scroll {
+        padding: 2%;
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .tandon {
+      padding-bottom: 125px;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    }
+
+    .main-body {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .education {
+        padding-bottom: 12%;
+    }
+
+    .exp-label {
+        font-size: 10px;
+    }
+
+    .profile {
+        padding: 40px;
+    }
+
+    .name {
+        font-size: 3rem;
+        color: white;
+        padding-bottom: 10px;
+    }
+
+    .horz-scroll {
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,0) 50%, rgba(0,0,0,0.6531206232492996) 100%);
+    }
+    
+}
+
+.b {
+    font-weight: bold;
+}
+
+h1.bb, h1 {
+    font-weight: 800;
+    color: black;
+}
+
+.nb {
+    font-weight: normal;
+}
+
+.white {
+    color: white;
+}
+
+.main-body {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 16px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.profile {
+    border-radius: 50%;
+}
+
+.education {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    border: none;
+}
+
+.skill-section {
+    background: rgb(66,85,104);
+    background: linear-gradient(125deg, rgba(66,85,104,1) 15%, rgba(2,12,110,1) 85%);
+    color: white;
+    padding-bottom: 5%;
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 90%);
+    border: none;
+}
+
+.skills {
+    font-style: italic;
+}
+
+.experience {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgb(170, 218, 255) 100%);
+    padding-bottom: 100px;
+}
+
+.exp-label {
+    max-width: 100%;
+}
+
+.projects {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgb(255, 170, 170) 100%);
+    padding-bottom: 3%;
+}
+
+.proj-card {
+    background-image: url(motor.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.pj-2 {
+}
+
+.pj-2 .card.card2 {
+}
+
+.proj-card:hover {
+    background-image: url(motor-dim.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.proj-card-text {
+    display: none;
+}
+
+.proj-card:hover .proj-card-text {
+    display: block;
+    color: white;
+    animation: fadeIn 3s;
+}
+
+ul li {
+    margin-left: 25px;
+    list-style-type: disc;
+}
+
+footer {
+    padding: 5%;
+    background-color: black;
+}
+
+footer ul li {
+    list-style: none;
+    margin-left: 0;
+    padding-bottom: 5px;
+}
+
+footer li a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer li a:hover {
+    color: rgb(172, 172, 172);
+    text-decoration: none;
+}
+
+footer li a svg {
+    width: 30px;
+    margin-right: 20px;
+    fill: white;
+    text-decoration: none;
+}
+
+footer li a svg:hover {
+    width: 30px;
+    margin-right: 20px;
+    fill: gray;
+    text-decoration: none;
+}
+
+footer form .label {
+    color: white;
+}
+
+footer .icon {
+    width: 10px;
+}
