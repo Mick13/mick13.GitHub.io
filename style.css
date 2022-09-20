@@ -182,8 +182,7 @@ h1.bb, h1 {
 }
 
 .projects {
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgb(255, 170, 170) 100%);
+    background: rgb(66, 63, 63);
     padding-bottom: 3%;
 }
 
