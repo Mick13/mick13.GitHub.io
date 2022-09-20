@@ -11,6 +11,76 @@
 </head>
 <body>
     <section class="hero is-medium tandon">
+
+        <nav class="navbar is-transparent">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://bulma.io">
+                <img src="logo.svg" alt="Mickey Shamah" width="32" height="32">
+              </a>
+              <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+              <div class="navbar-start">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link b" style="color: rgb(0, 0, 0)" href="https://bulma.io/documentation/overview/start/">
+                      Menu
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                      <a class="navbar-item" href="#about">
+                        About
+                      </a>
+                      <a class="navbar-item" href="#education">
+                        Education 
+                      </a>
+                      <a class="navbar-item" href="#projects">
+                        Projects
+                      </a>
+                      <a class="navbar-item" href="#contact">
+                        Contact
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="navbar-item" href="MickeyJShamah.pdf">
+                        Resume
+                      </a>
+                    </div>
+                  </div>
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link b" style="color: rgb(0, 0, 0)" href="https://bulma.io/documentation/overview/start/">
+                      Menu
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                      <a class="navbar-item" href="#about">
+                        About
+                      </a>
+                      <a class="navbar-item" href="#education">
+                        Education 
+                      </a>
+                      <a class="navbar-item" href="#projects">
+                        Projects
+                      </a>
+                      <a class="navbar-item" href="#contact">
+                        Contact
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="navbar-item" href="MickeyJShamah.pdf">
+                        Resume
+                      </a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </nav>
+
+
+        <!--
         <nav class="navbar is-transparent">
           
             <div" class="navbar-menu">
@@ -43,7 +113,8 @@
                 </div>
               </div>
             </div>
-          </nav>
+        </nav>
+    -->
         <div class="hero-body">
           <p class="b name">
             Mickey Shamah
@@ -373,6 +444,28 @@
             });
         }window.CP.exitedLoop(0);
         });
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+        });
+        });
+
+});
     </script>
 </body>
 </html>
