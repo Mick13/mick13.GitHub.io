@@ -190,6 +190,10 @@ h1.bb, h1 {
     padding-bottom: 3%;
 }
 
+.projects .card-image {
+    height: 100%;
+}
+
 .proj-card {
     background-image: url(motor.jpg);
     background-position: center;
@@ -208,12 +212,6 @@ h1.bb, h1 {
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-}
-
-.pj-2 {
-}
-
-.pj-2 .card.card2 {
 }
 
 .proj-card:hover {
